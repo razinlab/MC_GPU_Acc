@@ -5,9 +5,13 @@ A high-performance options pricing system that combines GPU-accelerated Monte Ca
 ## Key Features
 
 • Custom CUDA Monte Carlo simulator with >600,000x speedup over baseline Python implementation
+
 • Deep neural network surrogate model trained on 1.5M simulation samples  
+
 • Sub-millisecond inference with ≤1% MAE error on key test cases
+
 • PyBind11 integration for seamless Python-CUDA interoperability
+
 • Comprehensive validation against Black-Scholes analytical solutions
 
 ## Methodology
