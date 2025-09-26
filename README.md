@@ -48,6 +48,6 @@ The system architecture consists of three main components:
 
 ## Findings
 
-The GPU-accelerated Monte Carlo simulator achieved exceptional performance scaling, enabling the generation of large-scale training datasets that would be computationally prohibitive with traditional CPU approaches. The neural network surrogate successfully learned the complex option pricing function across diverse market regimes, with particularly strong performance on at-the-money and high-volatility scenarios.
+The GPU-accelerated Monte Carlo simulator achieved a massive increase performance, enabling the generation of large-scale training datasets that would've taken too long with traditional CPU approaches. The neural network surrogate successfully learned the complex option pricing function across diverse market regimes, with notably strong performance on at-the-money and high-volatility scenarios.
 
-Performance analysis revealed that while the neural network occasionally struggled with very short expiry options (20% error on 1-month contracts), it maintained excellent accuracy (0.5-5% error) across the majority of test scenarios, making it suitable for production applications requiring ultra-fast pricing.
+Performance analysis revealed that while the neural network occasionally struggled with very short expiry options (20% error on 1-month contracts), it maintained excellent accuracy (0.5-5% error) across the majority of test scenarios, making it suitable for applications requiring ultra-fast pricing.
