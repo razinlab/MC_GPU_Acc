@@ -51,18 +51,3 @@ The system architecture consists of three main components:
 The GPU-accelerated Monte Carlo simulator achieved exceptional performance scaling, enabling the generation of large-scale training datasets that would be computationally prohibitive with traditional CPU approaches. The neural network surrogate successfully learned the complex option pricing function across diverse market regimes, with particularly strong performance on at-the-money and high-volatility scenarios.
 
 Performance analysis revealed that while the neural network occasionally struggled with very short expiry options (20% error on 1-month contracts), it maintained excellent accuracy (0.5-5% error) across the majority of test scenarios, making it suitable for production applications requiring ultra-fast pricing.
-
-## Technical Implementation
-
-**Dependencies:**
-- CUDA 11.8+ with compute capability 8.9+
-- PyTorch for neural network training
-- PyBind11 for Python-CUDA integration  
-- NumPy, SciPy for mathematical operations
-- scikit-learn for data preprocessing
-
-**Key optimizations:**
-- Coalesced memory access patterns in CUDA kernels
-- Stratified sampling across market regimes
-- StandardScaler preprocessing for neural network stability
-- Batch processing for efficient GPU utilization
